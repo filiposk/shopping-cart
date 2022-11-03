@@ -1,0 +1,38 @@
+@import "src/app/scss/_base.scss";
+:host{
+    flex-basis: 30%;
+}
+.cart-checkout {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: $border;
+    border-radius: $border-radius;
+}
+h2{
+    text-align: center;
+}
+
+h3{
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.insert-button {
+    margin: 10px;
+    color: white;
+    font-size: 24px;
+    height: 50px;
+    background-color: $secondary;
+    border-radius: $border-radius;
+}
+
+.button-disabled {
+    margin: 10px;
+    color: black;
+    font-size: 24px;
+    height: 50px;
+    background-color: grey;
+    border-radius: $border-radius;
+}

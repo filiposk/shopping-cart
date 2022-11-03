@@ -1,0 +1,6 @@
+<div class="cart-checkout">
+      <h2>Cart checkout</h2>
+      <h3>Price: {{totalPrice}} </h3>
+
+      <button (click)="openCheckout()" [disabled]="totalPrice < 1" class="{{ totalPrice < 1 ? 'button-disabled' : 'insert-button'}}">Checkout</button>
+</div>

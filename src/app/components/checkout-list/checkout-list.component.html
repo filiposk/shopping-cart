@@ -1,0 +1,13 @@
+<h2>Your cart items:</h2>
+<div class="cart-list" *ngFor="let article of CartList">
+    <div class="cart-item">
+        <p><b>SKU number: </b>{{article.sku}} </p>
+        <p><b>Name: </b>{{article.name}}</p>
+        <p><b>Price: </b>{{article.price}}€</p>
+        <p><b>Quaintity: </b>{{article.quantity}}</p>
+    </div>
+</div>
+<div class="buttons-list()">
+    <button (click)="checkout()" class="checkout-button">Checkout</button>
+    <button (click)="cancel()" class="cancel-button">Cancel</button>
+</div>

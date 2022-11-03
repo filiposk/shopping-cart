@@ -1,0 +1,9 @@
+<div *ngFor="let article of InventoryList">
+    <div class="inventory-list">
+        <p><b>SKU number: </b>{{article.sku}} </p>
+        <p><b>Name: </b>{{article.name}}</p>
+        <p><b>Price: </b>{{article.price}}€</p>
+        <p><b>Quaintity: </b>{{article.quantity}}</p>
+        <p style="width: 10%"><mat-icon  *ngIf="article.quantity > 0" (click)="addArticleToCart(article)">add_shopping_cart</mat-icon></p>
+    </div>
+</div>

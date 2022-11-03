@@ -1,0 +1,20 @@
+@import "src/app/scss/_base.scss";
+:host {
+    flex-basis: 70%;
+}
+.cart-list {
+    flex-basis: 70%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border: $border;
+    border-radius: $border-radius;
+    column-gap: 20px;
+    justify-content: space-around;
+    background: $primary;
+    align-items: center;
+}
+
+p{
+    width: 20%;
+}

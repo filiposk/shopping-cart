@@ -1,0 +1,13 @@
+<div class="insert-article">
+    <h2>Insert new article</h2>
+    <label>SKU number</label>
+    <input type="text" (input)="checkDisabled()" [(ngModel)]="skuNumber" placeholder="Insert SKU number">
+    <label>Name</label>
+    <input type="text" (input)="checkDisabled()" [(ngModel)]="articleName" placeholder="Insert article name">
+    <label>Price</label>
+    <input type="number" (input)="checkDisabled()" [(ngModel)]="articlePrice" placeholder="Insert article price">
+    <label>Quaintity</label>
+    <input type="number" (input)="checkDisabled()" [(ngModel)]="articleQuantity" placeholder="Insert article quantity">
+    <button [disabled]="isButtonDisabled" class="{{ isButtonDisabled ? 'button-disabled' : 'insert-button'}}"
+        (click)="addArticle()">Insert article</button>
+</div>

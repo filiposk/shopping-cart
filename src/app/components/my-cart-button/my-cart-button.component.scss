@@ -1,0 +1,11 @@
+@import "src/app/scss/_base.scss";
+
+.my-cart-button{
+    background: $secondary;
+    color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px;
+}
